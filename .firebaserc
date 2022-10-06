@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "primerparciallaboiv-e50f4": {
+      "hosting": {
+        "primerParcialLaboIV": [
+          "primerparciallaboiv-e50f4"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "primerparciallaboiv-e50f4"
+  }
+}
