@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="mt-5 row">
+      <div class="col-md-8 order-md-1">
+        <h4 class="mb-3">Salen Pizzas</h4>
+        <form class="needs-validation" [formGroup]="grupoControles" (ngSubmit)='modificarPizza()'>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="firstName">Nombre</label>
+                <input type="text" class="form-control"  formControlName='nombre' placeholder="Ingrese el nombre" readonly>
+              </div>
+            <div class="col-md-6 mb-3">
+              <label for="firstName">Ingredientes</label>
+              <input type="text" class="form-control" formControlName='ingredientes' placeholder="Ingrese los ingredientes">
+              <small class="invalid" *ngIf="this.grupoControles.get('ingredientes')?.errors?.['required'] && this.grupoControles.get('ingredientes')?.touched">Los ingredientes son requeridos</small>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="firstName">Precio</label>
+                <input type="text" class="form-control" formControlName='precio' placeholder="Ingrese el precio">
+                <small class="invalid" *ngIf="this.grupoControles.get('precio')?.errors?.['required'] && this.grupoControles.get('precio')?.touched">El precio es requerida</small>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="firstName">Peso</label>
+                <input type="text" class="form-control" formControlName='peso' placeholder="Ingrese el peso">
+                <small class="invalid" *ngIf="this.grupoControles.get('peso')?.errors?.['required'] && this.grupoControles.get('peso')?.touched">El peso es requerida</small>
+                <small class="invalid" *ngIf="this.grupoControles.get('peso')?.errors?.['min'] || this.grupoControles.get('peso')?.errors?.['max']">El peso debe ser entre 500 y 1000 gms.</small>
+              </div>
+          </div> 
+          <hr class="mb-4">
+          <button type="submit" class="mb-5 btn btn-dark btn-lg btn-block" [disabled]='grupoControles.invalid' >Modificar pizza</button>
+          <small class="success">{{this.agregado}}</small>
+        </form>
+      </div>
+    </div>
+</div>

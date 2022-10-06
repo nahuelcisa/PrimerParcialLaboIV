@@ -16,6 +16,10 @@ import { RepartidorDetalleComponent } from './components/repartidor-detalle/repa
 import { ListadoRepartidoresComponent } from './components/listado-repartidores/listado-repartidores.component';
 import { DetallePaisComponent } from './components/detalle-pais/detalle-pais.component';
 import { DetallesRepartidorComponent } from './components/detalles-repartidor/detalles-repartidor.component';
+import { PizzasComponent } from './components/pizzas/pizzas.component';
+import { AltaPizzaComponent } from './components/alta-pizza/alta-pizza.component';
+import { BajaPizzaComponent } from './components/baja-pizza/baja-pizza.component';
+import { ModificarPizzaComponent } from './components/modificar-pizza/modificar-pizza.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,11 @@ import { DetallesRepartidorComponent } from './components/detalles-repartidor/de
     RepartidorDetalleComponent,
     ListadoRepartidoresComponent,
     DetallePaisComponent,
-    DetallesRepartidorComponent
+    DetallesRepartidorComponent,
+    PizzasComponent,
+    AltaPizzaComponent,
+    BajaPizzaComponent,
+    ModificarPizzaComponent
   ],
   imports: [
     BrowserModule,
