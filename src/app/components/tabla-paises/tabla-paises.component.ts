@@ -30,7 +30,6 @@ export class TablaPaisesComponent implements OnInit {
       this.paises = paises;
     
     });
-    console.log(this.paises);
   }
 
 }

@@ -21,7 +21,6 @@ export class BienvenidaComponent implements OnInit {
   {
     this.api.traerDatosGitHub().subscribe(dato => {
       this.datoGit = dato;
-      console.log(this.datoGit);
     });
   }
 
