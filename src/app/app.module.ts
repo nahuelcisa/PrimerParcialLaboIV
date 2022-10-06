@@ -12,6 +12,10 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { TablaPaisesComponent } from './components/tabla-paises/tabla-paises.component';
+import { RepartidorDetalleComponent } from './components/repartidor-detalle/repartidor-detalle.component';
+import { ListadoRepartidoresComponent } from './components/listado-repartidores/listado-repartidores.component';
+import { DetallePaisComponent } from './components/detalle-pais/detalle-pais.component';
+import { DetallesRepartidorComponent } from './components/detalles-repartidor/detalles-repartidor.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { TablaPaisesComponent } from './components/tabla-paises/tabla-paises.com
     BienvenidaComponent,
     LoginComponent,
     AltaRepartidorComponent,
-    TablaPaisesComponent
+    TablaPaisesComponent,
+    RepartidorDetalleComponent,
+    ListadoRepartidoresComponent,
+    DetallePaisComponent,
+    DetallesRepartidorComponent
   ],
   imports: [
     BrowserModule,
